@@ -8,7 +8,7 @@ var command =
 module.exports = function() {
   try {
     return (
-      exec(command, { stdio: ["inherit", "inherit", "ignore"] })
+      exec(command)
         .toString()
         .trim() === "ec2"
     );
